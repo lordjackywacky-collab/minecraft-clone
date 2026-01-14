@@ -1,0 +1,15 @@
+{
+  "name": "minecraft-clone",
+  "version": "1.0.0",
+  "description": "A fully functional browser-based 3D Minecraft alpha clone built with Three.js and vanilla JavaScript. Experience the core mechanics of early Minecraft alpha versions directly in your browser!",
+  "main": "blocks.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "three": "^0.182.0"
+  }
+}
