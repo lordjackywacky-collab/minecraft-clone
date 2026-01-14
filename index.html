@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minecraft Alpha Clone</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Game canvas -->
+    <canvas id="gameCanvas"></canvas>
+    
+    <!-- Crosshair -->
+    <div id="crosshair"></div>
+    
+    <!-- UI Overlay -->
+    <div id="ui">
+        <div id="controls" class="panel">
+            <h3>Controls</h3>
+            <ul>
+                <li><strong>WASD</strong> - Move</li>
+                <li><strong>Mouse</strong> - Look around</li>
+                <li><strong>Space</strong> - Jump</li>
+                <li><strong>Left Click</strong> - Break block</li>
+                <li><strong>Right Click</strong> - Place block</li>
+                <li><strong>ESC</strong> - Release mouse</li>
+            </ul>
+        </div>
+        
+        <div id="info" class="panel">
+            <div id="fps">FPS: 0</div>
+            <div id="position">Position: (0, 0, 0)</div>
+            <div id="currentBlock">Current Block: Dirt</div>
+        </div>
+        
+        <div id="clickPrompt">
+            Click to start
+        </div>
+    </div>
+    
+    <!-- Three.js from CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.min.js"></script>
+    
+    <!-- Game scripts -->
+    <script src="blocks.js"></script>
+    <script src="renderer.js"></script>
+    <script src="world.js"></script>
+    <script src="player.js"></script>
+    <script src="game.js"></script>
+</body>
+</html>
