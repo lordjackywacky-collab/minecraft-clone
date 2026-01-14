@@ -35,14 +35,9 @@ A fully functional browser-based 3D Minecraft alpha clone built with Three.js an
 
 ## How to Run
 
-### Option 1: Open Directly in Browser
+### Quick Start (Recommended)
 1. Clone or download this repository
-2. Open `index.html` in a modern web browser (Chrome, Firefox, Edge, Safari)
-3. Click anywhere to lock the pointer and start playing
-4. That's it! No build process or server required.
-
-### Option 2: Using a Local Server (Recommended)
-While not required, using a local server can improve performance:
+2. Start a local web server in the project directory:
 
 ```bash
 # Using Python 3
@@ -58,7 +53,15 @@ npx http-server
 php -S localhost:8000
 ```
 
-Then open `http://localhost:8000` in your browser.
+3. Open `http://localhost:8000` in your browser
+4. Click anywhere to lock the pointer and start playing
+
+**Note:** While the game uses ES6 modules, a local server is required due to CORS restrictions with modules. Simply opening `index.html` directly may not work in all browsers.
+
+### Prerequisites
+- Modern web browser with WebGL support (Chrome 90+, Firefox 88+, Edge 90+, Safari 14+)
+- No build process or compilation required
+- Three.js is included locally (no CDN required)
 
 ## Controls
 
