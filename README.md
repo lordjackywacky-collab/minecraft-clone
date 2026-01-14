@@ -119,7 +119,7 @@ minecraft-clone/
 ```
 
 ### Technologies Used
-- **Three.js** (v0.160.0) - 3D graphics library
+- **Three.js** (v0.182.0) - 3D graphics library
 - **Vanilla JavaScript** (ES6+) - No frameworks required
 - **HTML5 Canvas** - Rendering surface
 - **Pointer Lock API** - Mouse capture for FPS controls
