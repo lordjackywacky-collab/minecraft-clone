@@ -2,7 +2,9 @@
  * Three.js renderer setup and rendering optimizations
  */
 
-class Renderer {
+import * as THREE from './three.module.min.js';
+
+export class Renderer {
     constructor() {
         this.canvas = document.getElementById('gameCanvas');
         this.scene = new THREE.Scene();

@@ -2,7 +2,10 @@
  * Player controller with movement, physics, and collision detection
  */
 
-class Player {
+import * as THREE from './three.module.min.js';
+import { BlockType } from './blocks.js';
+
+export class Player {
     constructor(camera, world) {
         this.camera = camera;
         this.world = world;

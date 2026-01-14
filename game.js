@@ -2,6 +2,11 @@
  * Main game loop and initialization
  */
 
+import { BlockManager } from './blocks.js';
+import { Renderer } from './renderer.js';
+import { World } from './world.js';
+import { Player } from './player.js';
+
 class Game {
     constructor() {
         this.blockManager = null;

@@ -2,7 +2,9 @@
  * Block type definitions and properties
  */
 
-const BlockType = {
+import * as THREE from './three.module.min.js';
+
+export const BlockType = {
     AIR: 0,
     GRASS: 1,
     DIRT: 2,
@@ -12,7 +14,7 @@ const BlockType = {
     LEAVES: 6
 };
 
-const BlockColors = {
+export const BlockColors = {
     [BlockType.GRASS]: 0x5a8f3a,
     [BlockType.DIRT]: 0x8b6f47,
     [BlockType.STONE]: 0x808080,
@@ -21,7 +23,7 @@ const BlockColors = {
     [BlockType.LEAVES]: 0x228b22
 };
 
-const BlockNames = {
+export const BlockNames = {
     [BlockType.AIR]: 'Air',
     [BlockType.GRASS]: 'Grass',
     [BlockType.DIRT]: 'Dirt',
@@ -31,7 +33,7 @@ const BlockNames = {
     [BlockType.LEAVES]: 'Leaves'
 };
 
-class BlockManager {
+export class BlockManager {
     constructor() {
         this.materials = {};
         this.createMaterials();

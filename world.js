@@ -2,6 +2,9 @@
  * World generation and chunk management
  */
 
+import * as THREE from './three.module.min.js';
+import { BlockType, BlockColors } from './blocks.js';
+
 class Chunk {
     constructor(x, z, blockManager) {
         this.x = x;
@@ -222,7 +225,7 @@ class Chunk {
     }
 }
 
-class World {
+export class World {
     constructor(renderer, blockManager) {
         this.renderer = renderer;
         this.blockManager = blockManager;
